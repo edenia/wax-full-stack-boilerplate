@@ -1,7 +1,7 @@
 {
   "name": "eosioboilerplate",
   "version": "1.0.0",
-  "description": "EOSIO Boilerplate WebApp",
+  "description": "WAX Boilerplate WebApp",
   "repository": "https://github.com/eoscostarica/eosioboilerplate.git",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

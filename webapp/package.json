@@ -1,8 +1,8 @@
 {
-  "name": "eosiominecraft",
+  "name": "wax_boilerplate",
   "version": "1.0.0",
-  "description": "Minecraft WebApp",
-  "repository": "https://github.com/eoscostarica/eosioboilerplate.git",
+  "description": "WAX Full Stack Boilerplate",
+  "repository": "https://github.com/eoscostarica/wax-full-stack-boilerplate.git",
   "scripts": {
     "start": "react-app-rewired start",
     "build": "react-app-rewired build",

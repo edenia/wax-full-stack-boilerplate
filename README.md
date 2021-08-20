@@ -1,10 +1,10 @@
-# EOSCR Boilerplate
+# WAX Full Stack Boilerplate
 
 [![N|Solid](https://github.com/eoscostarica/eos-rate/raw/master/docs/eoscostarica-logo-black.png)](https://eoscostarica.io/)
 
-![](https://img.shields.io/github/license/eoscostarica/full-stack-boilerplate) ![](https://img.shields.io/badge/code%20style-standard-brightgreen.svg) ![](https://img.shields.io/badge/%E2%9C%93-collaborative_etiquette-brightgreen.svg) ![](https://img.shields.io/twitter/follow/eoscostarica.svg?style=social&logo=twitter) ![](https://img.shields.io/github/forks/eoscostarica/full-stack-boilerplate?style=social)
+![](https://img.shields.io/github/license/eoscostarica/wax-full-stack-boilerplate) ![](https://img.shields.io/badge/code%20style-standard-brightgreen.svg) ![](https://img.shields.io/badge/%E2%9C%93-collaborative_etiquette-brightgreen.svg) ![](https://img.shields.io/twitter/follow/eoscostarica.svg?style=social&logo=twitter) ![](https://img.shields.io/github/forks/eoscostarica/wax-full-stack-boilerplate?style=social)
 
-A highly scalable skeleton with best practices, fullstack monorepo containing our front end and backend boilerplates.
+A highly scalable skeleton with best practices, fullstack monorepo containing our front end and backend boilerplates and WAX JS integration.
 
 - [EOSCR Boilerplate](#eoscr-boilerplate)
 - [Version](#version)
@@ -41,6 +41,7 @@ This boilerplate features all the latest technologies and practices in the indus
 - React
 - Kubernetes
 - EOSIO
+- WAX-JS
 
 # Installation
 
@@ -63,7 +64,7 @@ cp .env.example .env
 
 ## Quick Start
 
-1.  Clone this repo using `git clone --depth=1 https://github.com/eoscostarica/full-stack-boilerplate.git <YOUR_PROJECT_NAME>`.
+1.  Clone this repo using `git clone --depth=1 https://github.com/eoscostarica/wax-full-stack-boilerplate.git <YOUR_PROJECT_NAME>`.
 2.  Move to the appropriate directory: `cd <YOUR_PROJECT_NAME>`.
 3.  Run `make run` in order to start the project using docker compose.
 
@@ -146,7 +147,7 @@ We need to handle REST custom requests coming from the Hasura GraphQL server. Fo
 
 ### EOSIO Blockchain Technology Integration
 
-As a company that delivers EOSIO blockchain-based solutions, we build a template which contains EOSIO integration, specifically [eosjs](https://github.com/EOSIO/eosjs). This allow us to iterate quickly over the more challenging features of our projects.
+As a company that delivers EOSIO blockchain-based solutions, we build a template which contains EOSIO integration, specifically [wax-js](https://developer.wax.io/waa/use-waxjs/). This allow us to iterate quickly over the more challenging features of our projects.
 
 # License
 
@@ -156,7 +157,7 @@ MIT © [EOS Costa Rica](https://eoscostarica.io).
 
 Please Read EOS Costa Rica's [Open Source Contributing Guidelines](https://developers.eoscostarica.io/docs/open-source-guidelines).
 
-Please report bugs big and small by [opening an issue](https://github.com/eoscostarica/full-stack-boilerplate/issues)
+Please report bugs big and small by [opening an issue](https://github.com/eoscostarica/wax-full-stack-boilerplate/issues)
 
 ## Contributors
 

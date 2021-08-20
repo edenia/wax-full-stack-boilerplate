@@ -34,15 +34,15 @@ jobs:
           PORT: 80
           REACT_APP_TAG: ${{ github.ref }}
           REACT_APP_VERSION: ${{ github.ref }}
-          REACT_APP_NAME: 'eoscr_boilerplate'
-          REACT_APP_TITLE: 'Full-Stack Boilerplate'
+          REACT_APP_NAME: 'wax_boilerplate'
+          REACT_APP_TITLE: 'WAX Full-Stack Boilerplate'
           REACT_APP_LOGO: 'https://raw.githubusercontent.com/eoscostarica/design-assets/master/logos/eosCR/fullColor-vertiall-transparent-white.png'
           REACT_APP_FOOTER_LINKS: '[]'
-          REACT_APP_UAL_APP_NAME: 'Full-Stack Boilerplate'
+          REACT_APP_UAL_APP_NAME: 'WAX Full-Stack Boilerplate'
           REACT_APP_UAL_API_PROTOCOL: 'https'
-          REACT_APP_UAL_API_HOST: 'jungle.eosio.cr'
+          REACT_APP_UAL_API_HOST: 'chain.wax.io'
           REACT_APP_UAL_API_PORT: '443'
-          REACT_APP_UAL_CHAIN_ID: '2a02a0053e5a8cf73a56ba0fda11e4d92e0238a4a2aa74fccf46d5a910746840'
+          REACT_APP_UAL_CHAIN_ID: '1064487b3cd1a897ce03ae5b6a865651747e2e152090f99c1d19d44e01aea5a4'
           REACT_APP_HASURA_URL: ${{ secrets.REACT_APP_HASURA_URL }}
 
       - name: Build kubernetes files
@@ -52,9 +52,9 @@ jobs:
             build-kubernetes
         env:
           # general
-          NAMESPACE: boilerplate
-          INGRESS_HOST: boilerplate.eosio.cr
-          INGRESS_GRAPHQL_HOST: graphql-boilerplate.eosio.cr
+          NAMESPACE: wax-boilerplate
+          INGRESS_HOST: wax-boilerplate.eosio.cr
+          INGRESS_GRAPHQL_HOST: graphql-wax-boilerplate.eosio.cr
           # Postgres
           POSTGRES_USER: ${{ secrets.POSTGRES_USER }}
           POSTGRES_PASSWORD: ${{ secrets.POSTGRES_PASSWORD }}
@@ -63,8 +63,8 @@ jobs:
           # hapi
           HAPI_SERVER_PORT: 9090
           HAPI_SERVER_ADDRESS: 0.0.0.0
-          HAPI_NETWORK_API: 'https://jungle.eosio.cr'
-          HAPI_NETWORK_CHAIN_ID: '2a02a0053e5a8cf73a56ba0fda11e4d92e0238a4a2aa74fccf46d5a910746840'
+          HAPI_NETWORK_API: 'https://chain.wax.io'
+          HAPI_NETWORK_CHAIN_ID: '1064487b3cd1a897ce03ae5b6a865651747e2e152090f99c1d19d44e01aea5a4'
           HAPI_NETWORK_BASE_ACCOUNT: ${{ secrets.HAPI_NETWORK_BASE_ACCOUNT }}
           HAPI_NETWORK_BASE_PASSWORD: ${{ secrets.HAPI_NETWORK_BASE_PASSWORD }}
           HAPI_NETWORK_WALLET_URL: ${{ secrets.HAPI_NETWORK_WALLET }}
