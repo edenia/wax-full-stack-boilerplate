@@ -1,9 +1,9 @@
 import EosApi from 'eosjs-api'
 
-import { ualConfig } from '../config'
+import { walletConfig } from '../config'
 
 export const eosApi = EosApi({
-  httpEndpoint: ualConfig.endpoint,
+  httpEndpoint: walletConfig.rpcEndpoint,
   verbose: false,
   fetchConfiguration: {}
 })
