@@ -6,13 +6,13 @@
     "darkMode": "Dark Mode"
   },
   "routes": {
-    "/>title": "EOSIO Boilerplate",
+    "/>title": "WAX Boilerplate",
     "/>sidebar": "Home",
     "/>heading": "Welcome",
-    "/about>title": "About | EOSIO Boilerplate",
+    "/about>title": "About | WAX Boilerplate",
     "/about>sidebar": "About",
     "/about>heading": "About",
-    "/help>title": "Help | EOSIO Boilerplate",
+    "/help>title": "Help | WAX Boilerplate",
     "/help>sidebar": "Help",
     "/help>heading": "Help",
     "docs": "Docs",
