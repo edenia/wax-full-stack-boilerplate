@@ -7,8 +7,8 @@ ARG react_app_logo
 ARG react_app_footer_links
 ARG react_app_wax_app_name
 ARG react_app_wax_api_protocol
-ARG REACT_APP_WAX_API_HOST
-ARG REACT_APP_WAX_API_PORT
+ARG react_app_wax_api_host
+ARG react_app_wax_api_port
 ARG react_app_wax_chain_id
 ARG react_app_hasura_url
 
@@ -23,8 +23,8 @@ ENV REACT_APP_LOGO $react_app_logo
 ENV REACT_APP_FOOTER_LINKS $react_app_footer_links
 ENV REACT_APP_WAX_APP_NAME $react_app_wax_app_name
 ENV REACT_APP_WAX_API_PROTOCOL $react_app_wax_api_protocol
-ENV REACT_APP_WAX_API_HOST $REACT_APP_WAX_API_HOST
-ENV REACT_APP_WAX_API_PORT $REACT_APP_WAX_API_PORT
+ENV REACT_APP_WAX_API_HOST $react_app_wax_api_host
+ENV REACT_APP_WAX_API_PORT $react_app_wax_api_port
 ENV REACT_APP_WAX_CHAIN_ID $react_app_wax_chain_id
 ENV REACT_APP_HASURA_URL $react_app_hasura_url
 ENV TOOL_NODE_FLAGS --max_old_space_size=4096

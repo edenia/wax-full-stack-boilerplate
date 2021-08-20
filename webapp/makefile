@@ -29,8 +29,8 @@ build-docker: ./Dockerfile
 		--build-arg react_app_footer_links="$(REACT_APP_FOOTER_LINKS)" \
 		--build-arg react_app_wax_app_name="$(REACT_APP_WAX_APP_NAME)" \
 		--build-arg react_app_wax_api_protocol="$(REACT_APP_WAX_API_PROTOCOL)" \
-		--build-arg REACT_APP_WAX_API_HOST="$(REACT_APP_WAX_API_HOST)" \
-		--build-arg REACT_APP_WAX_API_PORT="$(REACT_APP_WAX_API_PORT)" \
+		--build-arg react_app_wax_api_host="$(REACT_APP_WAX_API_HOST)" \
+		--build-arg react_app_wax_api_port="$(REACT_APP_WAX_API_PORT)" \
 		--build-arg react_app_wax_chain_id="$(REACT_APP_WAX_CHAIN_ID)" \
 		--build-arg react_app_hasura_url="$(REACT_APP_HASURA_URL)" \
 		.
