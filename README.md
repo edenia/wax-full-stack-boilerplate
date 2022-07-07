@@ -7,10 +7,9 @@
 A highly scalable skeleton with best practices, fullstack monorepo containing our front end and backend boilerplates and WAX JS integration.
 
 - [EOSCR Boilerplate](#eoscr-boilerplate)
-- [Version](#version)
 - [Features!](#features)
 - [Installation](#installation)
-  - [Before to Start](#before-to-start)
+  - [Getting Started](#getting-started)
   - [First Time](#first-time)
   - [Quick Start](#quick-start)
 - [File Structure](#file-structure)
@@ -23,14 +22,8 @@ A highly scalable skeleton with best practices, fullstack monorepo containing ou
       - [Hasura GraphQL Server](#hasura-graphql-server)
       - [Hapi REST Server](#hapi-rest-server)
     - [EOSIO Blockchain Technology Integration](#eosio-blockchain-technology-integration)
-- [License](#license)
 - [Contributing](#contributing)
-  - [Contributors](#contributors)
-  - [About EOS Costa Rica](#about-eos-costa-rica)
-
-# Version
-
-- 0.1.0
+  - [About Edenia](#about-edenia)
 
 # Features!
 
@@ -45,7 +38,7 @@ This boilerplate features all the latest technologies and practices in the indus
 
 # Installation
 
-## Before to Start
+## Getting Started
 
 Somethings you need before getting started:
 
@@ -121,7 +114,7 @@ Within the download you'll find the following directories and files:
 ## Infrastructure Diagram
 
 <p align="center">
-  <img src="docs/img/infra.svg" />
+  <img src="https://github.com/eoscostarica/full-stack-boilerplate/blob/main/docs/img/infraNew.png" />
 </p>
 
 ## Technologies Specification
@@ -149,41 +142,21 @@ We need to handle REST custom requests coming from the Hasura GraphQL server. Fo
 
 As a company that delivers EOSIO blockchain-based solutions, we build a template which contains EOSIO integration, specifically [wax-js](https://developer.wax.io/waa/use-waxjs/). This allow us to iterate quickly over the more challenging features of our projects.
 
-# License
-
-MIT © [EOS Costa Rica](https://eoscostarica.io).
-
 # Contributing
 
 Please Read EOS Costa Rica's [Open Source Contributing Guidelines](https://developers.eoscostarica.io/docs/open-source-guidelines).
 
 Please report bugs big and small by [opening an issue](https://github.com/eoscostarica/wax-full-stack-boilerplate/issues)
 
-## Contributors
-
-Thanks goes to these wonderful people ([emoji key](https://github.com/kentcdodds/all-contributors#emoji-key)):
-
-<table>
-  <tr>
-    <td align="center"><a href="https://github.com/xavier506"><img src="https://avatars0.githubusercontent.com/u/5632966?v=4" width="100px;" alt="Xavier Fernandez"/><br /><sub><b>Xavier Fernandez</b></sub></a><br /><a href="#ideas-xavier506" title="Ideas, Planning, & Feedback">🤔</a> <a href="#blog-xavier506" title="Blogposts">📝</a> <a href="#talk-xavier506" title="Talks">📢</a> <a href="#infra-xavier506" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a></td>
- <td align="center"><a href="https://github.com/tetogomez">
-      <img src="https://avatars3.githubusercontent.com/u/10634375?s=460&v=4" width="100px;" alt="Teto Gomez"/><br /><sub><b>Teto Gomez</b></sub></a><br /><a href="https://github.com/eoscostarica/eosrate/commits?author=tetogomez" title="Ideas, Planning, & Feedback">🤔</a> <a href="https://github.com/eoscostarica/eosrate/commits?author=tetogomez" title="Code">💻</a> <a href="#review-tetogomez" title="Reviewed Pull Requests">👀</a></td>
-      <td align="center"><a href="https://github.com/adriexnet">
-      <img src="https://avatars3.githubusercontent.com/u/5375168?s=460&u=542a27a00b761d98851991c6a6d5f78d7b35a2b2&v=4" width="100px;" alt="Adriel Diaz"/><br /><sub><b>Adriel Diaz</b></sub></a><br /><a href="https://github.com/eoscostarica/eosrate/commits?author=adriexnet" title="Ideas, Planning, & Feedback">🤔</a> <a href="https://github.com/eoscostarica/eosrate/commits?author=adriexnet" title="Code">💻</a> <a href="#review-adriexnet" title="Reviewed Pull Requests">👀</a></td>
-  </tr>
-</table>
-
-This project follows the [all-contributors](https://github.com/kentcdodds/all-contributors) specification. Contributions of any kind welcome!
-
-## About EOS Costa Rica
+## About Edenia
 
 <p align="center">
-	<a href="https://eoscostarica.io">
-		<img src="https://github.com/eoscostarica/eos-rate/raw/master/docs/eoscostarica-logo-black.png" width="300">
+	<a href="https://edenia.com">
+		<img src="https://user-images.githubusercontent.com/5632966/165814672-9a7763a8-9748-405d-8bc0-de0278ce9eb4.png" width="300">
 	</a>
 </p>
 <br/>
 
-EOS Costa Rica is an independently-owned, self-funded, bare-metal Genesis block producer that provides stable and secure infrastructure for EOSIO blockchains. We support open source software for our community while offering enterprise solutions and custom smart contract development for our clients.
+Edenia runs independent blockchain infrastructure and develops web3 solutions. Our team of technology-agnostic builders has been operating since 1987, leveraging the newest technologies to make the internet safer, more efficient, and more transparent.
 
-[eoscostarica.io](https://eoscostarica.io)
+[edenia.com](https://edenia.com/)
