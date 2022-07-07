@@ -1,12 +1,22 @@
 # WAX Full Stack Boilerplate
+<div align="center">
+	<a href="https://edenia.com">
+		<img src="https://user-images.githubusercontent.com/5632966/165814672-9a7763a8-9748-405d-8bc0-de0278ce9eb4.png" width="300">
+	</a>
+</p>
 
-[![N|Solid](https://github.com/eoscostarica/eos-rate/raw/master/docs/eoscostarica-logo-black.png)](https://eoscostarica.io/)
+![](https://img.shields.io/github/license/eoscostarica/wax-full-stack-boilerplate) 
+![](https://img.shields.io/badge/code%20style-standard-brightgreen.svg) 
+![](https://img.shields.io/badge/%E2%9C%93-collaborative_etiquette-brightgreen.svg) 
+![](https://img.shields.io/twitter/follow/eoscostarica.svg?style=social&logo=twitter) 
+![](https://img.shields.io/github/forks/eoscostarica/wax-full-stack-boilerplate?style=social)
 
-![](https://img.shields.io/github/license/eoscostarica/wax-full-stack-boilerplate) ![](https://img.shields.io/badge/code%20style-standard-brightgreen.svg) ![](https://img.shields.io/badge/%E2%9C%93-collaborative_etiquette-brightgreen.svg) ![](https://img.shields.io/twitter/follow/eoscostarica.svg?style=social&logo=twitter) ![](https://img.shields.io/github/forks/eoscostarica/wax-full-stack-boilerplate?style=social)
+</div>
 
+# Edenia Boilerplate
 A highly scalable skeleton with best practices, fullstack monorepo containing our front end and backend boilerplates and WAX JS integration.
 
-- [EOSCR Boilerplate](#eoscr-boilerplate)
+- [Edenia Boilerplate](#edenia-boilerplate)
 - [Features!](#features)
 - [Installation](#installation)
   - [Getting Started](#getting-started)
