@@ -1,9 +1,8 @@
 # WAX Full Stack Boilerplate
 <div align="center">
 	<a href="https://edenia.com">
-		<img src="https://user-images.githubusercontent.com/5632966/178800854-cffb01ea-b55a-44b2-bcfa-872301874a43.png" width="300">
+		<img src="https://raw.githubusercontent.com/edenia/.github/master/.github/workflows/images/edenia-logo.png" width="300">
 	</a>
-</p>
 
 ![](https://img.shields.io/github/license/eoscostarica/wax-full-stack-boilerplate) 
 ![](https://img.shields.io/badge/code%20style-standard-brightgreen.svg) 
@@ -162,9 +161,8 @@ Please report bugs big and small by [opening an issue](https://github.com/eoscos
 
 <div align="center">
 	<a href="https://edenia.com">
-		<img src="https://user-images.githubusercontent.com/5632966/178800854-cffb01ea-b55a-44b2-bcfa-872301874a43.png" width="300">
+		<img src="https://raw.githubusercontent.com/edenia/.github/master/.github/workflows/images/edenia-logo.png" width="300">
 	</a>
-</p>
 
 [![Twitter](https://img.shields.io/twitter/follow/EdeniaWeb3?style=for-the-badge)](https://twitter.com/EdeniaWeb3)
 ![Discord](https://img.shields.io/discord/946500573677625344?color=black&label=discord&logo=discord&logoColor=white&style=for-the-badge)
