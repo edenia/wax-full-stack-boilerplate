@@ -66,7 +66,7 @@ Somethings you need before getting started:
 
 Copy the `.env.example` then update the environment variables according to your needs.
 
-```
+```sh
 cp .env.example .env
 ```
 
