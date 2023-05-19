@@ -82,7 +82,7 @@ At this point you can navigate to `http://localhost:3000`.
 
 Within the download you'll find the following directories and files:
 
-```
+```sh
 ├── docs
 │   └── img
 ├── hapi
