@@ -7,7 +7,17 @@ RESET  := $(shell tput -Txterm sgr0)
 K8S_BUILD_DIR ?= ./build_k8s
 K8S_FILES := $(shell find ./kubernetes -name '*.yaml' | sed 's:./kubernetes/::g')
 
+validate-env:
+	@if [ ! -f .env ]; then \
+		echo "Copying .env.example file"; \
+		cp .env.example .env; \
+	else \
+		echo "Using the existing .env file"; \
+	fi
+
 run:
+	make -B validate-env
+
 	make -B postgres
 	make -B wallet
 	make -B hapi
