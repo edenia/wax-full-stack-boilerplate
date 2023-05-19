@@ -35,7 +35,7 @@
     "@mui/material": "^5.0.1",
     "@mui/styles": "^5.0.1",
     "@mui/x-date-pickers": "^6.5.0",
-    "@waxio/waxjs": "^1.0.1",
+    "@waxio/waxjs": "^1.4.2",
     "core-js": "^3.15.2",
     "date-fns": "^2.22.1",
     "eosjs-api": "^7.0.4",
