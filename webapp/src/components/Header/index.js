@@ -94,6 +94,8 @@ const LanguageButton = memo(({ current, onChange }) => {
   )
 })
 
+LanguageButton.displayName = 'LanguageButton'
+
 LanguageButton.propTypes = {
   current: PropTypes.string,
   onChange: PropTypes.func

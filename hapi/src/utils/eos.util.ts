@@ -1,15 +1,12 @@
-const { Api, JsonRpc } = require('eosjs')
-const { JsSignatureProvider } = require('eosjs/dist/eosjs-jssig')
-const fetch = require('node-fetch')
-const { TextEncoder, TextDecoder } = require('util')
-const EosApi = require('eosjs-api')
+import { Api, JsonRpc } from 'eosjs'
+import { JsSignatureProvider } from 'eosjs/dist/eosjs-jssig'
+import fetch from 'node-fetch'
+import EosApi from 'eosjs-api'
 
-const { eosConfig } = require('../config')
+import { eosConfig } from '../config'
 
-const walletUtil = require('./wallet.util')
+import walletUtil from './wallet.util'
 
-const textEncoder = new TextEncoder()
-const textDecoder = new TextDecoder()
 const rpc = new JsonRpc(eosConfig.endpoint, { fetch })
 const eosApi = EosApi({
   httpEndpoint: eosConfig.endpoint,
@@ -17,7 +14,7 @@ const eosApi = EosApi({
   fetchConfiguration: {}
 })
 
-const newAccount = async accountName => {
+const newAccount = async (accountName: string) => {
   const password = await walletUtil.create(accountName)
   const key = await walletUtil.createKey(accountName)
 
@@ -26,7 +23,9 @@ const newAccount = async accountName => {
       eosConfig.baseAccount,
       eosConfig.baseAccountPassword
     )
-  } catch (error) {}
+  } catch (error) {
+    console.log('Wallet already unlocked')
+  }
 
   const keys = await walletUtil.listKeys(
     eosConfig.baseAccount,
@@ -34,8 +33,6 @@ const newAccount = async accountName => {
   )
   const api = new Api({
     rpc,
-    textDecoder,
-    textEncoder,
     chainId: eosConfig.chainId,
     signatureProvider: new JsSignatureProvider(keys)
   })
@@ -117,7 +114,7 @@ const newAccount = async accountName => {
   }
 }
 
-const generateRandomAccountName = async (prefix = '') => {
+const generateRandomAccountName = async (prefix = ''): Promise<string> => {
   const length = 12
 
   if (prefix.length === 12) return prefix
@@ -140,9 +137,9 @@ const generateRandomAccountName = async (prefix = '') => {
   }
 }
 
-const getAbi = account => eosApi.getAbi(account)
+const getAbi = (account: string) => eosApi.getAbi(account)
 
-const getAccount = async account => {
+const getAccount = async (account: string) => {
   try {
     const accountInfo = await eosApi.getAccount(account)
 
@@ -152,7 +149,7 @@ const getAccount = async account => {
   }
 }
 
-const getBlock = async blockNumber => {
+const getBlock = async (blockNumber: number) => {
   try {
     const block = await eosApi.getBlock(blockNumber)
 
@@ -162,14 +159,15 @@ const getBlock = async blockNumber => {
   }
 }
 
-const getCodeHash = account => eosApi.getCodeHash(account)
+const getCodeHash = (account: string) => eosApi.getCodeHash(account)
 
-const getCurrencyBalance = (code, account, symbol) =>
+const getCurrencyBalance = (code: string, account: string, symbol: string) =>
   eosApi.getCurrencyBalance(code, account, symbol)
 
-const getTableRows = options => eosApi.getTableRows({ json: true, ...options })
+const getTableRows = (options: any) =>
+  eosApi.getTableRows({ json: true, ...options })
 
-const transact = async (actions, auths) => {
+const transact = async (actions: any, auths: any) => {
   try {
     const keys = []
 
@@ -177,17 +175,19 @@ const transact = async (actions, auths) => {
       const auth = auths[index]
       try {
         await walletUtil.unlock(auth.account, auth.password)
-      } catch (error) {}
+      } catch (error) {
+        console.log('Wallet already unlocked')
+      }
 
       try {
         keys.push(...(await walletUtil.listKeys(auth.account, auth.password)))
-      } catch (error) {}
+      } catch (error) {
+        console.log('Key already exists')
+      }
     }
 
     const api = new Api({
       rpc,
-      textDecoder,
-      textEncoder,
       chainId: eosConfig.chainId,
       signatureProvider: new JsSignatureProvider(keys)
     })
@@ -206,18 +206,20 @@ const transact = async (actions, auths) => {
       try {
         const auth = auths[index]
         await walletUtil.lock(auth.account)
-      } catch (error) {}
+      } catch (error) {
+        console.log('Wallet already locked')
+      }
     }
 
     return transaction
-  } catch (error) {
+  } catch (error: any) {
     throw new Error(
       error.message.replace(/assertion failure with message: /gi, '')
     )
   }
 }
 
-module.exports = {
+export default {
   newAccount,
   generateRandomAccountName,
   getAccount,
